@@ -16,7 +16,9 @@ public class Main {
     w2.addWorker(new SeniorWorker("Mohammed"));
     w2.addWorker(new JuniorWorker("Verena"));
 
+    //Job job2 = new CarInspection(new Audi(1998));
     w2.setJob(new CarInspection(new Audi(1988)));
+//    w2.addJob();
 
     w2.printReport();
 

@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Workshop {
-    List<Worker> workers = new ArrayList<>();
+    private List<Worker> workers = new ArrayList<>();
     private Job job;
     //ein Job = eine CarInspection, Interface ist dazu da, damit die Methoden vorgegeben sind, aber wie oft oder welche jobs das sind ist offen
+    private List<Job> jobs = new ArrayList<>();
 
     public void addWorker(Worker name) {
         workers.add(name);
+    }
+
+    public void addJob(Job job) {
+        jobs.add(job);
     }
 
     public void setJob(Job job) {
